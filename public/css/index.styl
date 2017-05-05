@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Revalia|Josefin+Sans|Exo");
+body
+	font-family "Exo", "NotoSansKR", sans-serif
+#wrapper
+	position relative
+	width 94%
+	min-height 750px
+	height auto
+	padding 1%
+	margin 2% auto
+	background-color #FFF
+	h1
+		font-size 2.25em
+		text-align center
+		font-weight 900
+		margin .75em .5em
+		line-height 1
+		font-family "Bungee Inline", sans-serif
+		color #424242
+	.adsence
+		width 728px
+		height 90px
+		margin 2.25em auto
+		background-color #009688
+		p
+			text-align center
+			color #FFF
+			font-size 1.5em
+			line-height 1
+			padding 1.4em
+			font-family "Josefin Sans", sans-serif
+			font-weight 800
+			&:after
+				content "Google Adsense Location (728x90)"
+	.subtitle
+		width 100%
+		margin .5em
+		span
+			font-size 1.15em
+			font-weight 700
+			color #424242
+			padding .5em .25em
+			border-bottom 3px solid #26A69A
+			font-family "Exo", sans-serif
+	.youtubeForm
+		margin 1em
+		p
+			font-size 1.25em
+			font-weight 600
+			text-align center
+			margin 1em
+		form
+			width 80%
+			margin auto
+			input[type="text"]
+				width 100%
+				font-size 1.25em
+				padding .5em
+				border none
+				background-color #F5F5F5
+				text-align center
+				font-family "Exo", "NotoSansKR", sans-serif
+			button
+				background-color #00BFA5
+				color #FFF
+				border none
+				padding 0 .75em
+				font-size 1.25em
+				height 2.3em
+				position relative
+				top -2.3em
+				float right
+				font-family "Josefin Sans", sans-serif
+				font-weight 800
+	.result
+		width 80%
+		margin auto
+		font-size 1.5em
+		.err
+			width 100%
+			margin 1.5em auto
+			background-color #ffcfcf
+			border 1px solid #cf4a4a
+			color #616161
+			p
+				margin 0 0
+				padding .5em
+				text-align center
+				word-break break-all
+		.msg
+			width 100%
+			min-height 12.5em
+			height auto
+			background-color #edfff5
+			border 1px solid #56a678
+			margin 1.5em auto
+			padding .5em 0
+			color #616161
+			h1
+				font-size 1.5em
+				line-height 1
+				margin 0 0
+				padding .5em
+				font-family "Exo", "NotoSansKR", sans-serif
+				font-weight 700
+			.mp3Down
+				width 94%
+				margin auto
+				
+				img
+					width 15em
+					display inline-block
+					vertical-align top
+					padding .75em 0
+				.half
+					width calc(100% - 16em)
+					display inline-block
+					vertical-align top
+					h2, h3
+						margin 0 1em
+					h2
+						text-align left
+						font-size .9em
+						word-break break-all
+					h3
+						font-size .8em
+					a
+						text-decoration none
+						color #004D40
+						font-size 1.5em
+						font-family "Josefin Sans", sans-serif
+						font-weight 900
+						h3
+							padding .5em 0
+		.process
+			background-color #edfff5 !important
+			border 1px solid #56a678 !important
+@media screen and (max-width:1024px)
+	#wrapper
+		.youtubeForm
+			form
+				width 90%
+		.result
+			width 90%
+@media screen and (max-width:900px)
+	#wrapper
+		.youtubeForm
+			form
+				width 95%
+		.result
+			width 95%
+@media screen and (max-width:770px)
+	#wrapper
+		height auto
+		h1
+			font-size 3em
+		.adsence
+			width 320px
+			height 100px
+			
+			p
+				line-height 1
+				padding 1.25em
+				&:after
+					content "Google Adsense Location (320x100)"
+		.youtubeForm
+			p
+				font-size 1.5em
+			form
+				input[type="text"]
+					width 90%
+					text-align left
+		.result
+			width 100%
+			margin auto
+			.err
+				p
+					font-size 1em
+					text-align left
+			.msg
+				height auto
+				.mp3Down
+					display inline-block
+					img 
+						display block
+						width 12em
+						margin .5em auto
+					.half
+						float none
+						width 100%
+						h2
+							font-size .9em
+							width 100%
+							padding 0 0
+						a
+							text-align center

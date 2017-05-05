@@ -1,0 +1,32 @@
+extends header
+block scripts
+	link(rel="stylesheet", href="/css/index.css")
+	script(type="text/javascript", src="/socket.io/socket.io.js")
+	script(type="text/javascript", src="/js/index.js")
+
+block content
+	section#wrapper
+		div.subTitle
+			span Youtube MP3 Converter
+		div.adsence
+			p
+		h1 Youtube MP3 Converter
+		div.youtubeForm
+			p Youtube URL Input...
+			form(onsubmit="return false")
+				input(type="text", placeholder="Youtube URL")
+				button Convert
+			div.result
+				//div.err.process
+					h1 100%
+				//div.msg
+					h1 Convert Success!
+					div.mp3Down
+						img(src="https://i.ytimg.com/vi/x0vMeMUAuRk/hqdefault.jpg?custom=true&w=246&h=138&stc=true&jpg444=true&jpgq=90&sp=68&sigh=1j-DQk626chFRHIQ6jHjGFGy-Mg")
+						div.half
+							h2 Title: Closer - The Chainsmokers ft.Halsey (KHS Cover) / Lia Kim Choreography
+							h3 Length: [4:13]
+							a(href="#")
+								h3 Download
+				//div.err
+					p Error: Invalid URL yaya
